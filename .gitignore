@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.obj
+*.o
+*.a
+*.lib
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Packaging / Distribution
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Coverage
+.pytest_cache/
+server/.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Datasets (Keep data/ directory tracked via .gitkeep)
+data/*
+!data/.gitkeep
+
+# Model Checkpoints & Outputs (Keep output directories tracked via .gitkeep)
+server/outputs/*
+!server/outputs/.gitkeep
+server/served_outputs/*
+!server/served_outputs/.gitkeep
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Node / NPM
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Streamlit Local Credentials (Keep client/.streamlit/config.toml tracked)
+.streamlit/credentials.toml
+client/.streamlit/credentials.toml
+
+# IDE, OS & Editor Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

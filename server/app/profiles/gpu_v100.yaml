@@ -1,0 +1,4 @@
+batch_size: 128
+num_workers: 8
+amp: true
+profile: gpu_v100

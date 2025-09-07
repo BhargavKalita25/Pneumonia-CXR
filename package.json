@@ -1,0 +1,27 @@
+{
+  "name": "pneumonia-cxr",
+  "version": "1.0.0",
+  "description": "Deep learning pipeline for pneumonia detection from Chest X-Rays with Grad-CAM, FastAPI server, and Streamlit client.",
+  "scripts": {
+    "start": "python server/launcher.py",
+    "dev": "python server/launcher.py",
+    "server": "python server/run.py -m uvicorn app.service.api:app --app-dir server --host 0.0.0.0 --port 8000 --reload",
+    "server:prod": "python server/run.py -m uvicorn app.service.api:app --app-dir server --host 0.0.0.0 --port 8000",
+    "client": "python server/run.py -m streamlit run client/streamlit_app.py --server.port 8501 --server.headless true",
+    "train": "python server/run.py server/app/train.py",
+    "evaluate": "python server/run.py server/app/evaluate.py",
+    "test": "python server/run.py -m pytest server/tests -v -o cache_dir=server/.pytest_cache",
+    "setup:server": "python server/setup_env.py --server",
+    "setup:client": "python server/setup_env.py --client",
+    "setup": "python server/setup_env.py"
+  },
+  "keywords": [
+    "deep-learning",
+    "pytorch",
+    "pneumonia-detection",
+    "chest-xray",
+    "gradcam",
+    "fastapi",
+    "streamlit"
+  ]
+}
